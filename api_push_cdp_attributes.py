@@ -67,7 +67,7 @@ def fix_decimal(x):
     except Exception:
         return None
 
-for col in ["itens_pedido", "valor_compra"]:
+for col in ["order_items", "purchase_amount"]:
     df[col] = df[col].apply(fix_decimal)
 
 df = df.replace({"<NA>": None, "NaT": None, "nan": None, "NaN": None})
@@ -95,8 +95,8 @@ else:
             },
             "attributes": {
                 "custom": {
-                    "qtd_itens_comprados": row["itens_pedido"],
-                    "valor_compra":        row["valor_compra"]
+                    "purchased_items_qty": row["purchased_items_qty"],
+                    "purchase_amount": row["purchase_amount"]
                 }
             }
         })
