@@ -16,7 +16,8 @@ Performs an upsert into the target table using a `MERGE` statement. The source i
 
 > All project IDs, dataset names, API endpoints, and business-specific identifiers have been removed. The logic and structure reflect real production code.
 
-Dashboard
+### `Dashboard`
+
 The screenshot shows the Insider CDP dashboard used to monitor campaign performance for journeys fed by this pipeline. All names, dates, and metrics have been replaced with synthetic data.
 
 ⚠️ Anonymization notice: All project IDs, dataset names, table names, API endpoints, journey names, and business-specific identifiers have been replaced with generic placeholders. KPI values and date ranges visible in the dashboard screenshot are synthetic. The logic and structure reflect real production code.
